@@ -3,8 +3,7 @@ name: Deploy Jekyll to GitHub Pages
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  workflow_dispatch:  # 这行很重要！允许手动触发
 
 permissions:
   contents: read
